@@ -1,7 +1,9 @@
 import NavigationBar from "@/components/navbar"
-import FirstHomePage from "@/components/home-1";
+import FirstHomePage from "@/components/home/home-1";
+import ThirdHomePage from "@/components/home/home-3";
+import FourHomePage from "@/components/home/home-4";
 import { Lilita_One, Patrick_Hand } from "next/font/google";
-import SecondHomePage from "@/components/home-2";
+import SecondHomePage from "@/components/home/home-2";
 
 const lilita = Lilita_One({
   subsets: ["latin"],
@@ -37,6 +39,16 @@ export default function HomePage(){
                     <SecondHomePage/>
                 </div>
 
+
+                {/* Location */}
+                <div>
+                    <ThirdHomePage/>
+                </div>
+
+                {/* FAQ */}
+                <div>
+                    <FourHomePage/>   
+                </div>
             </div>
         </div>
     )

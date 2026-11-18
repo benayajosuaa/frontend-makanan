@@ -25,10 +25,10 @@ const link_navbar = [
 
 export default function NavigationBar (){
     return (
-        <div className={patrick.className}>
+        <div className={lilita.className}>
             <div className="text-[#714521] bg-[#FFF5E7]">
                 <div className="flex flex-row justify-between border-b items-center">
-                    <div className="font-semibold">
+                    <div className="">
                         <div className=" p-4 ml-4">
                             <div className="flex flex-row gap-x-8">
                                 {
@@ -52,8 +52,8 @@ export default function NavigationBar (){
                         </Link>
                     </div>
                 
-                    <div className=" p-4 border-l font-semibold">
-                        <Link href="/">
+                    <div className=" p-4 border-l font-semibold text-[#FFF5E7] bg-[#714521]">
+                        <Link href="/" >
                             Masuk / Daftar
                         </Link>
                     </div>
