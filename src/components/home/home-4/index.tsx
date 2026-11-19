@@ -63,7 +63,7 @@ export default function FourHomePage(){
     return (
         <div>
             <div className={patrick.className}>
-                <div className="p-20">
+                <div className="p-20 pt-30 pb-30">
                     <div className="flex flex-col gap-y-10">
                         {/* Title */}
                         <div className={lilita.className}>
@@ -113,7 +113,7 @@ export default function FourHomePage(){
                                                 }`}
                                             >
                                                 <div className="overflow-hidden pt-3">
-                                                <p className=" text-[#5b3a22]/80 text-2xl">{item.answer}</p>
+                                                <p className="text-[#5b3a22]/80 text-3xl">{item.answer}</p>
                                                 </div>
                                             </div>
 
