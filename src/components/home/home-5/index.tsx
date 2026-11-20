@@ -1,7 +1,6 @@
 "use client";
 import { Lilita_One, Patrick_Hand } from "next/font/google";
 import { Anton } from "next/font/google";
-import { useState } from "react";
 
 
 const anton = Anton({

@@ -17,9 +17,9 @@ const patrick = Patrick_Hand({
 });
 
 const link_navbar = [
-    {id:"1", routing:"/", nama:"Tentang Kami"},
+    {id:"1", routing:"/tentang-kami", nama:"Tentang Kami"},
     {id:"2", routing:"/", nama:"Menu"},
-    {id:"3", routing:"/", nama:"Contact"},
+    {id:"3", routing:"/hubungin-kami", nama:"Contact"},
 ]
 
 

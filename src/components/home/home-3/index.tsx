@@ -31,8 +31,8 @@ export default function ThirdHomePage(){
                 <div className="border-b border-t border-[#714521]">
                     <div className="flex flex-row ">
                         <div className="basis-4/10">
-                            <h1 className="h-140 w-full bg-amber-200">
-                                Gambar
+                            <h1 className="h-140 w-full bg-amber-200 object-cover">
+                                <img className="object-cover h-140 w-full" src="asset/rumahmakanan.png" alt="" />
                             </h1>
                         </div>
                         <div className="basis-6/10">
