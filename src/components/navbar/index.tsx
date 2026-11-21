@@ -53,7 +53,7 @@ export default function NavigationBar (){
                     </div>
                 
                     <div className=" p-4 border-l font-semibold text-[#FFF5E7] bg-[#714521]">
-                        <Link href="/" >
+                        <Link href="/login" >
                             Masuk / Daftar
                         </Link>
                     </div>
