@@ -117,7 +117,7 @@ export default function LoginPage(){
                                 <div>
                                     {/* Link */}
                                     <div>
-                                        <Link href="/lo" className="opacity-80">
+                                        <Link href="/login" className="opacity-80">
                                             <span className="underline">Sudah punya akun</span> ? masuk saja !
                                         </Link>
                                     </div>
