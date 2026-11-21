@@ -1,7 +1,7 @@
 import { anton, lilita, patrick } from "@/components/font/font";
 import Link from "next/link";
 
-export default function LoginPage(){
+export default function RegisterPage(){
     return (
         <div>
             <div className={patrick.className}>
