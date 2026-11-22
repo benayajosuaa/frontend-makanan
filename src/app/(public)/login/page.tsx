@@ -8,7 +8,7 @@ export default function LoginPage(){
                 <div className="h-screen w-screen bg-amber-200 text-[#714521] flex flex-row">
                     {/* img */}
                     <div className="basis-4/10 h-screen w-auto">
-                        <img src="asset/ornamen.png" className="h-screen w-auto object-cover" alt="" />
+                        <img src="asset/ornamen.png" className="h-screen w-screen object-cover" alt="" />
                     </div>
 
                     {/* form */}

@@ -156,7 +156,7 @@ export default function RegisterPage(){
                     </div>
                     {/* img */}
                     <div className="basis-4/10 h-screen w-auto">
-                        <img src="asset/ornamen2.png" className="h-screen w-auto object-cover" alt="" />
+                        <img src="asset/ornamen2.png" className="h-screen w-screen object-cover" alt="" />
                     </div>
                 </div>
             </div>
