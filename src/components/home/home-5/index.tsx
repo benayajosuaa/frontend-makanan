@@ -53,7 +53,7 @@ export default function FifthHomePage() {
               cursor-pointer rounded-full
               border-2 border-[#714521]
               bg-[#FFF5E7] text-[#714521]
-              px-10 py-2 sm:px-28
+              px-10 py-2 sm:px-28 max-xl:max-w-full max-sm:px-8 max-sm:text-xl max-sm:min-h-11
               text-2xl tracking-wide
               shadow-[3px_4px_0_0_#714521]
               transition-all duration-150

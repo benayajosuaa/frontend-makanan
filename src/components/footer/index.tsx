@@ -30,9 +30,9 @@ const kamar320 = [
 ]
 
 const link_footer = [
-    {id:"1", name:"Tentang Kami", link:"/"},
-    {id:"2", name:"Menu", link:"/"},
-    {id:"3", name:"Contact", link:"/"},
+    {id:"1", name:"Tentang Kami", link:"/tentang-kami"},
+    {id:"2", name:"Menu", link:"/menu"},
+    {id:"3", name:"Contact", link:"/hubungin-kami"},
 ]
 
 
@@ -40,9 +40,9 @@ export default function Footer(){
     return (
         <div>
             <div className={patrick.className}>
-                <div className="bg-[#714521] p-15 pb-10 text-[#FFF5E7]">
+                <div className="bg-[#714521] p-15 pb-10 text-[#FFF5E7] max-xl:p-10 max-sm:px-6">
                     <div className="flex flex-col gap-y-10">
-                        <div className="flex flex-row justify-between">
+                        <div className="flex flex-row justify-between max-md:flex-col max-md:gap-8">
                             {/* Ini logo */}
                             <div className="flex flex-col">
                                 <div>
@@ -54,7 +54,7 @@ export default function Footer(){
                             </div>
                             
                             <div>
-                                <div className="flex flex-row gap-x-8">
+                                <div className="flex flex-row gap-x-8 max-sm:flex-wrap max-sm:gap-y-8">
                                     <div className="flex flex-col gap-y-5">
                                         <div className={anton.className}>
                                             <h1 className="text-xl">TINDAKAN CEPAT</h1>
@@ -64,7 +64,7 @@ export default function Footer(){
                                                 link_footer.map((item) => {
                                                     return (
                                                         <div key={item.id}>
-                                                            <Link href={item.link}>
+                                                            <Link href={item.link} className="max-xl:inline-flex max-xl:min-h-11 max-xl:items-center">
                                                                 <span>
                                                                     {item.name}
                                                                 </span>
@@ -86,7 +86,7 @@ export default function Footer(){
                                                 kamar320.map((item) => {
                                                     return (
                                                         <div key={item.id}>
-                                                            <Link href={item.link}>
+                                                            <Link href={item.link} className="max-xl:inline-flex max-xl:min-h-11 max-xl:items-center">
                                                                 <span>
                                                                     {item.name}
                                                                 </span>

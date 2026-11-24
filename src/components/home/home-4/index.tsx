@@ -63,7 +63,7 @@ export default function FourHomePage(){
     return (
         <div>
             <div className={patrick.className}>
-                <div className="p-20 pt-30 pb-30">
+                <div className="p-20 pt-30 pb-30 max-xl:px-10 max-xl:py-20 max-sm:px-6 max-sm:py-14">
                     <div className="flex flex-col gap-y-10">
                         {/* Title */}
                         <div className={lilita.className}>
@@ -88,9 +88,9 @@ export default function FourHomePage(){
                                                 onClick={() => toggle(item.id)}
                                                 aria-expanded={isOpen}
                                                 aria-controls={`${item.id}-answer`}
-                                                className="flex w-full items-center justify-between gap-4 text-left font-semibold text-[#5b3a22]"
+                                                className="flex w-full items-center justify-between gap-4 max-xl:min-h-11 text-left font-semibold text-[#5b3a22]"
                                             >
-                                                <span className="text-2xl">
+                                                <span className="text-2xl max-sm:text-xl max-xl:wrap-anywhere">
                                                     <span className={anton.className}>
                                                         {item.question}
                                                     </span>
@@ -113,7 +113,7 @@ export default function FourHomePage(){
                                                 }`}
                                             >
                                                 <div className="overflow-hidden pt-3">
-                                                <p className="text-[#5b3a22]/80 text-3xl">{item.answer}</p>
+                                                <p className="text-[#5b3a22]/80 text-3xl max-xl:text-2xl max-sm:text-xl max-xl:wrap-anywhere">{item.answer}</p>
                                                 </div>
                                             </div>
 

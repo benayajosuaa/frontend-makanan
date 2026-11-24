@@ -5,22 +5,22 @@ export default function LoginPage(){
     return (
         <div>
             <div className={patrick.className}>
-                <div className="h-screen w-screen bg-amber-200 text-[#714521] flex flex-row">
+                <div className="h-screen w-screen bg-amber-200 text-[#714521] flex flex-row max-xl:h-auto max-xl:min-h-dvh max-xl:w-full max-md:flex-col">
                     {/* img */}
-                    <div className="basis-4/10 h-screen w-auto">
-                        <img src="asset/ornamen.png" className="h-screen w-screen object-cover" alt="" />
+                    <div className="basis-4/10 h-screen w-auto max-xl:relative max-xl:h-auto max-xl:min-w-0 max-md:h-48 max-md:basis-auto max-md:shrink-0">
+                        <img src="asset/ornamen.png" className="h-screen w-screen object-cover max-xl:absolute max-xl:inset-0 max-xl:h-full max-xl:w-full" alt="" />
                     </div>
 
                     {/* form */}
-                    <div className="basis-6/10 bg-[#FFF5E7]">
-                        <div className="p-20">
-                            <div className="flex flex-col gap-y-10">
+                    <div className="basis-6/10 bg-[#FFF5E7] max-xl:min-w-0 max-xl:min-h-dvh max-md:basis-auto">
+                        <div className="p-20 max-xl:p-10 max-sm:px-6">
+                            <div className="flex flex-col gap-y-10 max-xl:gap-y-8">
                                 <div>
                                     <img src="logo/icon_makanan_coklat.png" className="h-15 w-auto" alt="" />
                                 </div>
                                 <div>
                                     <div className={lilita.className}>
-                                        <h1 className="text-4xl">MASUK YUK!</h1>
+                                        <h1 className="text-4xl max-sm:text-3xl">MASUK YUK!</h1>
                                     </div>
                                 </div>
                                 <div className="flex flex-col gap-y-5">
@@ -72,7 +72,7 @@ export default function LoginPage(){
                                 <div>
                                     {/* Link */}
                                     <div>
-                                        <Link href="/register" className="opacity-80">
+                                        <Link href="/register" className="opacity-80 max-xl:inline-flex max-xl:min-h-11 max-xl:flex-wrap max-xl:items-center max-xl:gap-x-1">
                                             <span className="underline">Belum punya akun</span> ? daftar dulu yuk !
                                         </Link>
                                     </div>
@@ -87,7 +87,7 @@ export default function LoginPage(){
                                                         cursor-pointer rounded-full
                                                         border-2 border-[#714521]
                                                         bg-[#FFF5E7] text-[#714521]
-                                                        px-6 py-2 sm:px-10
+                                                        px-6 py-2 sm:px-10 max-xl:min-h-11 max-xl:max-w-full
                                                         text-sm font-bold tracking-wide
                                                         shadow-[3px_4px_0_0_#714521]
                                                         transition-all duration-150

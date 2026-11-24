@@ -31,45 +31,45 @@ export default function MenuPage(){
                     </div>
 
                     {/* Page  */}
-                    <div className="pt-30 p-15">
+                    <div className="pt-30 p-15 max-xl:px-10 max-xl:pb-10 max-md:pt-36 max-sm:px-6">
                         <div className="flex flex-col gap-y-5">
                             {/* title */}
                             <div className={lilita.className}>
-                                <h1 className="text-5xl">MAKANAN KAMI</h1>
+                                <h1 className="text-5xl max-sm:text-4xl">MAKANAN KAMI</h1>
                             </div>
 
                             {/* Keterangan tambahan */}
                             <div>
-                                <h1 className="text-2xl">Pilih makanan yang paling cocok dengan seleramu !</h1>
+                                <h1 className="text-2xl max-xl:text-xl max-xl:wrap-anywhere">Pilih makanan yang paling cocok dengan seleramu !</h1>
                             </div>
 
 
 
                             {/* List menu */}
                             <div className="pt-10">
-                                <div className="grid grid-cols-3 gap-x-10 gap-y-10">
+                                <div className="grid grid-cols-3 gap-x-10 gap-y-10 max-xl:grid-cols-2 max-xl:gap-6 max-sm:grid-cols-1">
                                     {
                                         menulist.map((item) => {
                                             return (
                                                 <div key={item.id}
-                                                    className="bg-[#bc9576] rounded-4xl"
+                                                    className="bg-[#bc9576] rounded-4xl max-xl:min-w-0"
                                                 >
                                                     {/* gambar */}
                                                     <div>
-                                                        <img src={item.image} alt="" className="rounded-t-4xl object-[center_20%] h-100 w-full object-cover"/>
+                                                        <img src={item.image} alt="" className="rounded-t-4xl object-[center_20%] h-100 w-full object-cover max-xl:h-80 max-sm:h-auto max-sm:aspect-[4/3]"/>
                                                     </div>
                                                     
                                                     {/* Penjelasan */}
-                                                    <div className="text-[#FFF5E7] p-8 pt-5 pb-8 gap-y-5 flex flex-col w-auto">
+                                                    <div className="text-[#FFF5E7] p-8 pt-5 pb-8 gap-y-5 flex flex-col w-auto max-xl:p-6 max-sm:p-5">
                                                         {/* Nama */}
-                                                        <div className="flex flex-row justify-between">
+                                                        <div className="flex flex-row justify-between max-xl:flex-wrap max-xl:gap-3">
                                                             {/* nama */}
                                                             <div className={anton.className}>
-                                                                <span className="text-2xl">{item.nama}</span>
+                                                                <span className="text-2xl max-xl:text-xl max-xl:wrap-anywhere">{item.nama}</span>
                                                             </div>
                                                             {/* harga */}
                                                             <div className={lilita.className}>
-                                                                <span className="text-2xl">{item.harga}</span>
+                                                                <span className="text-2xl max-xl:text-xl max-xl:wrap-anywhere">{item.harga}</span>
                                                             </div>
                                                         </div>
 
@@ -81,7 +81,7 @@ export default function MenuPage(){
                                                                     cursor-pointer rounded-full
                                                                     border-2 border-[#714521]
                                                                     bg-[#FFF5E7] text-[#714521]
-                                                                    px-6 py-2 sm:px-10
+                                                                    px-6 py-2 xl:px-10 max-xl:max-w-full max-xl:min-h-11 max-xl:px-4
                                                                     text-sm font-bold tracking-wide
                                                                     shadow-[3px_4px_0_0_#714521]
                                                                     transition-all duration-150
@@ -110,14 +110,14 @@ export default function MenuPage(){
                             </div>
 
                             {/* Lainnya */}
-                            <div className="flex items-center justify-center pt-30">
+                            <div className="flex items-center justify-center pt-30 max-xl:pt-16">
                                 <div className={lilita.className}>
-                                    <h1 className="text-4xl">MAU <span className="underline">REQUEST MAKANAN</span> DILUAR MENU YANG ADA ? LANGSUNG SAJA UNTUK</h1>
+                                    <h1 className="text-4xl max-xl:text-3xl max-sm:text-2xl">MAU <span className="underline">REQUEST MAKANAN</span> DILUAR MENU YANG ADA ? LANGSUNG SAJA UNTUK</h1>
                                 </div>
                             </div>
 
                             {/* hubungi kami skrng */}
-                            <div className="pb-30">
+                            <div className="pb-30 max-xl:pb-16">
                                 <Link href="/hubungin-kami" className={anton.className}>
                                     <div className="flex justify-center items-center mt-1">
                                         <button
@@ -127,8 +127,8 @@ export default function MenuPage(){
                                                 cursor-pointer rounded-full
                                                 border-2 border-[#714521]
                                                 bg-[#FFF5E7] text-[#714521]
-                                                px-6 py-2 sm:px-10
-                                                text-4xl font-bold tracking-wide
+                                                px-6 py-2 xl:px-10 max-xl:max-w-full max-xl:min-h-11 max-xl:px-4
+                                                text-4xl font-bold tracking-wide max-xl:text-2xl max-sm:text-xl
                                                 shadow-[3px_4px_0_0_#714521]
                                                 transition-all duration-150
                                                 hover:bg-[#F5E5D0]

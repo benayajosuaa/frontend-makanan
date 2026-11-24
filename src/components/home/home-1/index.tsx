@@ -18,7 +18,7 @@ export default function FirstHomePage() {
   return (
     <div className={patrick.className}>
       {/* Lebar & tinggi mengikuti ukuran layar */}
-      <div className="relative h-dvh w-full overflow-hidden">
+      <div className="relative h-dvh w-full overflow-hidden max-xl:min-h-160">
         {/* Gambar background */}
         <img
           src="/asset/makanan-home.png"
@@ -33,7 +33,7 @@ export default function FirstHomePage() {
         />
 
         {/* Konten */}
-        <div className="absolute bottom-20 left-6 z-10 flex flex-col gap-y-6 text-white sm:bottom-40 sm:left-15">
+        <div className="absolute bottom-20 left-6 z-10 flex flex-col gap-y-6 text-white xl:bottom-40 md:left-15 max-xl:right-6 max-md:bottom-12">
           {/* Judul */}
           <h1 className={`${lilita.className} text-4xl sm:text-6xl`}>
             MAKANAN TERBAIK <br /> UNTUKMU !
@@ -53,7 +53,7 @@ export default function FirstHomePage() {
                 cursor-pointer rounded-full
                 border-2 border-[#714521]
                 bg-[#FFF5E7] text-[#714521]
-                px-10 py-2 sm:px-28
+                px-10 py-2 sm:px-28 max-xl:max-w-full max-sm:px-8 max-sm:min-h-11
                 text-2xl font-bold tracking-wide
                 shadow-[3px_4px_0_0_#714521]
                 transition-all duration-150

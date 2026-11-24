@@ -79,7 +79,7 @@ export default function SecondHomePage(){
     };
 
     return(
-        <div className="p-15 pt-30 pb-30">
+        <div className="p-15 pt-30 pb-30 max-xl:px-10 max-xl:py-20 max-sm:px-6 max-sm:py-14">
             <div>
                 <div className="flex flex-col gap-y-5">
                     {/* Judul */}
@@ -103,7 +103,7 @@ export default function SecondHomePage(){
                             key={review.id}
                             className={`
                                 ${patrick.className}
-                                flex min-h-70 w-80 sm:w-96 shrink-0 snap-start flex-col
+                                flex min-h-70 w-80 sm:w-96 max-sm:w-full shrink-0 snap-start flex-col
                                 rounded-3xl border border-[#714521] p-6 text-[#714521]
                             `}
                             >

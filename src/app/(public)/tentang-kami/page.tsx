@@ -31,12 +31,12 @@ export default function HomePage(){
 
                 {/* Imgae */}
                 <div>
-                    <img src="asset/rumahmakanan3.png" className="w-screen h-140 object-cover object-[center_10%]" alt="" />
+                    <img src="asset/rumahmakanan3.png" className="w-screen h-140 object-cover object-[center_10%] max-xl:w-full max-md:h-100 max-md:pt-28" alt="" />
                 </div>
 
                 {/* Paragraf */}
-                <div className="p-20">
-                    <p className="text-3xl text-[#714521]">
+                <div className="p-20 max-xl:px-10 max-xl:py-14 max-sm:px-6">
+                    <p className="text-3xl text-[#714521] max-xl:text-2xl max-sm:text-xl max-xl:wrap-anywhere">
                         Pada 1950-an, “makanan” bermula dari dapur sebuah rumah di kawasan yang kini dikenal sebagai Jakarta Selatan. Setiap pagi, keluarga yang tinggal di rumah itu mulai menanak nasi, mengulek bumbu, dan menyiapkan lauk untuk makan siang. Menjelang tengah hari, pintu depan dibuka dan beberapa meja kayu digelar di teras. Dari situlah tetangga mulai mampir. Ada yang datang sepulang dari pasar, ada yang singgah di sela kerja, dan ada juga yang sekadar ingin tahu apa yang sedang dimasak.
                         
                         <br/><br/>
