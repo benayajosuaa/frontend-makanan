@@ -33,7 +33,7 @@ const faq_makanan = [
 
 ];
 
-export default function DashboardAdmin() {
+export default function FaqPageAdmin() {
   return (
     <div className={patrick.className}>
       <div className="space-y-6 text-[#714521]">
@@ -112,7 +112,7 @@ export default function DashboardAdmin() {
             {
               faq_makanan.map((items) => {
                 return(
-                  <div className="border rounded-2xl">
+                  <div key={items.id} className="border rounded-2xl">
                     <div className="flex flex-row">
                       {/* FAQ */}
                       <div className="basis-9/10 flex flex-col p-3 " >

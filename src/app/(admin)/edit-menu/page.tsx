@@ -18,7 +18,7 @@ const menulist = [
 ]
 
 
-export default function DashboardAdmin() {
+export default function MenuPageAdmin() {
   return (
     <div className={patrick.className}>
       <div className="space-y-6 text-[#714521]">
@@ -97,7 +97,7 @@ export default function DashboardAdmin() {
             {
               menulist.map((items) => {
                 return(
-                  <div className="flex flex-col border" >
+                  <div key={items.id} className="flex flex-col border" >
                     <div>
                       <img src={items.image} className="h-60 w-full object-cover" alt="" />
                     </div>
