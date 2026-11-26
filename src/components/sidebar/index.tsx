@@ -5,11 +5,10 @@ import Link from "next/link";
 
 
 const link_navbar = [
-    {id:"1", routing:"/dashboard", nama:"Banner"},
-    {id:"2", routing:"/dashboard", nama:"FAQ"},
-    {id:"3", routing:"/dashboard", nama:"image"},
-    {id:"4", routing:"/dashboard", nama:"menu"},
-    {id:"5", routing:"/dashboard", nama:"story"},
+    {id:"1", routing:"/edit-menu", nama:"Edit Menu"},
+    {id:"2", routing:"/faq", nama:"FAQ"},
+    {id:"3", routing:"/banner", nama:"banner"},
+    {id:"4", routing:"/story", nama:"story"},
     {id:"5", routing:"/rating", nama:"rating"},
     
 ]
@@ -28,7 +27,7 @@ export default function SidebarAdmin(){
 
                     <nav className={`${patrick.className} flex flex-col gap-y-3 pt-3`}>
                         {link_navbar.map((item) => (
-                            <Link key={item.id} href={item.routing} className="text-xl">
+                            <Link key={item.id} href={item.routing} className="text-xl hover:underline">
                                 {item.nama}
                             </Link>
                         ))}
@@ -37,7 +36,7 @@ export default function SidebarAdmin(){
 
                 {/* Bagian bawah */}
                 <div>
-                    <button className="text-[#714521] px-4 py-2 rounded-lg bg-[#FFF5E7]">
+                    <button className="text-[#714521] w-full justify-center px-4 py-2 rounded-lg bg-[#FFF5E7]">
                         <Link href="/">
                             <div className="flex flex-row justify-center items-center gap-x-2">
                                 <span className="text-sm">Logut</span>
